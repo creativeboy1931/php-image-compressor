@@ -1,0 +1,16 @@
+
+@font-face {
+    font-family: 'myhelper';
+    src:url('Allura-Regular.ttf') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'my_user';
+    src:url('Sacramento-Regular.ttf') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}

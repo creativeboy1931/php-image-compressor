@@ -1,0 +1,1 @@
+This is basic & simple image compresson app uisng php GD library.
