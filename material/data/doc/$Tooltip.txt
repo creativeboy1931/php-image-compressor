@@ -1,0 +1,7 @@
+ $ToolTip({
+     // properties
+     BgColor:'',
+     TextColor:'',
+     Msg:'',
+     Time:'', //bydefault 2.5s or 2500
+ });

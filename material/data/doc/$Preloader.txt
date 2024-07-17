@@ -1,0 +1,15 @@
+ $Preloader({
+     backgroundColor:'green',
+     TitleColor:'red',
+     TitleText:'Minfy',
+     greetingText:'ram ram',
+     greetingColor:'black'
+ });
+
+ properties {
+     #1 backgroundColor: 'set background color of Preloader';
+     #2 TitleText : 'set title text';
+     #3 TitleColor : 'set title color';
+     #4 greetingText : 'set greeting text';
+     #5 greetingColor : 'set greeting color';
+ }

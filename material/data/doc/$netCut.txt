@@ -1,0 +1,38 @@
+ $NetCut({
+     // properties
+ });
+
+ properties =>{
+     1) positionX => this is X aligment of $netCut
+        {
+            positionX:'start' (align left)
+            positionX:'center' (align center as default)
+            positionX:'end'   (align right)
+        }
+     2) positionY => this is Y aligment of $netCut
+        {
+            positionY:'start' (align left)
+            positionY:'center' (align center as default)
+            positionY:'end'   (align right)
+        }
+     3) backgroundColor => set background color of $netCut box
+        {
+            backgroundColor:'red'
+        }
+     4) titleClr => set main text color of $netCut box
+        {
+            titleClr:'red'
+        }
+     5) titleIcon => set X icon color of $netCut box
+        {
+            titleIcon:'red'
+        }
+     6) btnBg => set button background color of $netCut box
+        {
+            btnBg:'red'
+        }
+     7) btnClr => set button color of $netCut box
+        {
+            btnClr:'red'
+        }
+ }

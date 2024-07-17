@@ -1,0 +1,7 @@
+material.footer({
+    socialBtn:{facebook:'url',whatsapp:'url'},
+    menu:{home:'link',about:'link'},
+    subMenu:{terms:'link',privacy:'link'},
+    copyRight:{copyRight:'copyRight text',meta:'Powerd by myhelper'}
+    style:{bgColor:'color-value',textColor:'color-value',subBg:'bg-color-value'}
+});

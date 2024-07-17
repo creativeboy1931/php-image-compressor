@@ -1,0 +1,244 @@
+<style>
+    /* material footer style start */
+    .bgColor {
+        background-color: #0e3953;
+    }
+
+    .subBg {
+        background-color: rgb(7, 7, 7);
+    }
+
+    .textColor {
+        color: whitesmoke;
+    }
+
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    .footer_hr {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer_hr hr {
+        border-style: none;
+        width: 15%;
+        max-width: 70px;
+        height: 3.2px;
+        opacity: 0.8;
+        border-radius: 10px;
+        background-color: whitesmoke;
+    }
+
+    /* root css */
+    .material_footer_container {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .material_footer_social,
+    .material_footer_menu,
+    .material_footer_subMenu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .material_footer_social {
+        /* padding: 30px 15px 10px 15px; */
+        padding: 30px 15px;
+    }
+
+    .material_footer_social .icons img {
+        opacity: 0.8;
+        transition: opacity 0.5s ease-out;
+    }
+
+    .material_footer_menu .item_menu {
+        padding: 10px 0px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .material_footer_menu a {
+        opacity: 0.8;
+    }
+
+    .material_footer_menu a,
+    .material_footer_subMenu a {
+        text-decoration: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        transition: opacity 0.4s ease-out;
+    }
+
+    .material_footer_social img:hover,
+    .material_footer_menu a:hover {
+        opacity: 1;
+    }
+
+
+    .material_footer_subMenu {
+        padding-top: 5px;
+        padding-bottom: 15px;
+        text-transform: capitalize;
+        font-weight: normal;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .material_footer_subMenu a {
+        opacity: 0.7;
+    }
+
+    .material_footer_subMenu a:hover {
+        opacity: 0.9;
+    }
+
+    .material_footer_copyright {
+        padding: 14px 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copyright_text {
+        font-weight: 400;
+        font-family: 'Times New Roman', Times, serif;
+        text-transform: capitalize;
+        font-size: 13px;
+        opacity: 0.9;
+    }
+
+    .meta_text {
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+        font-size: 10px;
+        margin-top: 15px;
+        letter-spacing: 0.8px;
+    }
+
+    /* screen for mobile */
+    @media only screen and (max-width: 599px) {
+        .material_footer_social {
+            gap: 17px;
+        }
+
+        .material_footer_social img {
+            width: clamp(35px, 9.72vw, 40px);
+            height: clamp(35px, 9.72vw, 40px);
+        }
+
+        .material_footer_menu {
+            gap: 11px;
+            font-size: clamp(13px, 3.61vw, 15px);
+        }
+
+        .material_footer_subMenu {
+            gap: 10px;
+            font-size: clamp(13px, 3.61vw, 15px);
+        }
+    }
+
+    /* screen for desktop */
+    @media only screen and (min-width: 600px) {
+        .material_footer_social {
+            gap: clamp(15px, 2.34vw, 18px);
+        }
+
+        .material_footer_social img {
+            width: clamp(30px, 4.68vw, 35px);
+            height: clamp(30px, 4.68vw, 35px);
+        }
+
+        .material_footer_menu {
+            gap: 12px;
+            font-size: clamp(12px, 1.87vw, 13px);
+            letter-spacing: 0.8px;
+        }
+
+        .material_footer_subMenu {
+            gap: 10px;
+            font-size: clamp(12px, 1.87vw, 13px);
+        }
+    }
+
+    /* material footer style end */
+</style>
+<div class="material_footer_container bgColor textColor">
+    <!-- social icon start -->
+    <div class="material_footer_social">
+        <div class="icons">
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/material/img/social-icon/facebook.png" alt="">
+            </a>
+        </div>
+        <div class="icons">
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/material/img/social-icon/instagram.png" alt="instagram">
+            </a>
+        </div>
+        <div class="icons">
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/material/img/social-icon/linkedin.png" alt="linkedin">
+            </a>
+        </div>
+        <div class="icons">
+            <img src="/material/img/social-icon/twitter.png" alt="twitter">
+        </div>
+        <div class="icons">
+            <img src="/material/img/social-icon/whatsapp.png" alt="whatsapp">
+        </div>
+        <div class="icons">
+            <img src="/material/img/social-icon/pinterest.png" alt="pinterest">
+        </div>
+    </div>
+    <div class="footer_hr">
+        <hr>
+    </div>
+
+    <!-- footer menu start -->
+    <div class="material_footer_menu">
+        <div class="item_menu"><a href="http://" target="_blank" rel="noopener noreferrer" class="textColor">home</a>
+        </div>
+        <div class="item_menu"><a href="http://" target="_blank" rel="noopener noreferrer" class="textColor">about</a>
+        </div>
+        <div class="item_menu"><a href="http://" target="_blank" rel="noopener noreferrer" class="textColor">contact</a>
+        </div>
+    </div>
+    <!-- footer subMenu -->
+    <div class="material_footer_subMenu">
+        <div class="item_menu"><a href="http://" target="_blank" rel="noopener noreferrer" class="textColor">terms</a>
+        </div>
+        <b>|</b>
+        <div class="item_menu"><a href="http://" target="_blank" rel="noopener noreferrer" class="textColor">privacy</a>
+        </div>
+        <b>|</b>
+        <div class="item_menu"><a href="http://" target="_blank" rel="noopener noreferrer" class="textColor">about</a>
+        </div>
+    </div>
+    <div class="material_footer_copyright subBg">
+        <div class="copyright_text">Copyright © 2021 All Right Reserved Under Minfy</div>
+        <div class="meta_text">
+            developed by Myhelper
+        </div>
+    </div>
+</div>
+<script>
+Material('.material_footer_container').Footer({
+    socialBtn:{facebook:'url',whatsapp:'url'},
+    menu:{home:'link',about:'link'},
+    subMenu:{terms:'link',privacy:'link'},
+    copyRight:{copyRight:'copyRight text',meta:'Powerd by myhelper'},
+    style:{bgColor:'color-value',textColor:'color-value',subBg:'bg-color-value'}
+});
+</script>

@@ -1,0 +1,15 @@
+#1 call by src with callback function
+$CssLinker({
+    Src:'D:/material/test/main.css',
+    style:'body{color:blue;}',
+    Namespace:'_Css_material',
+    callback:function(){
+        //callback function
+    }
+});
+
+#2 call by style without callback function
+$CssLinker({
+    style:'body{color:blue;}',
+    Namespace:'_Css_material'
+});

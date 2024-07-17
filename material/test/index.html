@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./root.js"></script>
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        #_hello1{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        #_hello1 img{
+            /* max-width: 100px; */
+            height: auto;
+        }
+      /* material footer style start */
+        .ToolTipBgColor{
+            background-color: #0e3953;
+            /* background-color: rgba(51, 49, 49, 0.959); */
+            /* border: 1px solid black; */
+        }
+        .subBg{
+            background-color: rgb(7, 7, 7);
+        }
+        .TooltipClr{
+            color: whitesmoke;
+        }
+
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+       
+      /* material footer style end */
+        .meto{
+            background-color: red;
+            width: 100vw; 
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="meto" style="background-color: rgb(0, 255, 64)">
+        <!-- tooltip -->
+    </div>
+
+    <div class="meto"  style="background-color: red;">
+        <!-- tooltip -->
+    </div>
+    <!-- <script src="/material/material.js"></script>  -->
+    <!-- <script type="module" src="/material/version/v_1.0.2.js"></script> -->
+    
+<script>
+    material(function(){
+        let x = "ram sahu";
+        alert(x);
+    });
+</script>
+</body>
+</html>

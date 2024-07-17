@@ -1,0 +1,106 @@
+<style>
+    /* mainloader start */
+    :is(.main_loader_content, .main_loader_box, .main_loader_footer) {
+        display: flex;
+    }
+
+    .main_loader_box {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        background-color: whitesmoke;
+        z-index: 100;
+        transition: all 0.5s ease-in;
+    }
+
+    .main_loader_box_deactive {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .main_loader_content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: none;
+    }
+
+    .main_loader_header {
+        width: 100%;
+        flex-basis: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .main_loader_header strong {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 200;
+        text-shadow: 0 0 3.5px #100b0b63;
+        color: #2c2a2ae3;
+    }
+
+    .main_loader_img {
+        flex-basis: 50%;
+        margin: calc(100vh/4) 0px calc(100vh/10) 0px;
+    }
+
+    .main_loader_footer {
+        flex-basis: 20%;
+        flex-direction: row;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #747373;
+        text-transform: capitalize;
+    }
+
+    /* screen for mobile */
+    @media only screen and (max-width: 599px) {
+
+        /* mainLoader start */
+        .main_loader_header strong {
+            font-size: clamp(35px, 9.72vw, 40px);
+        }
+
+        .main_loader_img img {
+            width: clamp(45px, 12.5vw, 50px);
+            height: auto;
+        }
+
+        /* mainLoader End */
+    }
+
+    /* screen for desktop */
+    @media only screen and (min-width: 600px) {
+        .main_loader_header strong {
+            font-size: clamp(35px, 6.25vw, 40px);
+        }
+
+        .main_loader_img img {
+            width: clamp(37px, 5.78vw, 42px);
+            height: auto;
+        }
+    }
+
+    /* mainloader End */
+</style>
+<!-- for main loader start -->
+<div class="main_loader_box">
+    <div class="main_loader_content">
+        <div class="main_loader_header">
+            <strong>Myhelper</strong>
+        </div>
+        <div class="main_loader_img">
+            <img src="/codingo/accets/img_src/accet/subloader1.gif" alt="preloader">
+        </div>
+        <div class="main_loader_footer">
+            <p># ${if(data['greetingText']){data['greetingText']}else{your patience is really praiseworthy}}</p>
+        </div>
+    </div>
+</div>
+<!-- for main loader End -->

@@ -1,0 +1,134 @@
+<style>
+        .rootCss{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            background: none;
+        }
+        ._Material_modalbox{
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #282828c7;
+            transition-delay: 0.01s;
+            transition: opacity 0.4s ease-in, visibility 0.4s ease-in ,z-index 0.4s ease-in;
+            z-index: 10;
+        }
+        ._Material_modalbox_active{
+            display: flex;
+            opacity: 1;
+            visibility: visible;
+            z-index: 10;
+        }
+        ._netCut_box{
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: whitesmoke;
+            box-shadow: 0px 0px 2px 0.5px #0000005e;
+            border-radius: 7px;
+            padding: 20px 35px 20px 35px;
+        }
+
+        ._netCut_i{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid orange;
+            font-size: 17px;
+            color: orange;
+            border-radius: 50%;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+        }
+        ._netCut_text{
+            width: 100%;
+            text-align: center;
+            background-color: #00000005;
+            border-left: 2.99px solid orange;
+            padding: 2px 3px;
+        }
+        ._netCut_text strong{
+            color: #000000d9;
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: 0.5px;
+            text-shadow: 0 0 1px #726e6f91;
+        }
+        ._netCut_text p{
+            margin-top: -1px;
+            color: #00000085;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        ._netCut_btn{
+            margin-top: 20px;
+        }
+        ._netCut_btn button{
+            appearance: none;
+            border-style: none;
+            outline-style: none;
+            background-color: #00fb4dd1;
+            padding: 2.3px 8px;
+            border-radius: 3px;
+            color: #1c1a1adb;
+            font-weight: 600;
+        }
+        ._netCut_btn button:focus{
+            background-color: #000000c7;
+            color: #e7e7e7e0;
+        }
+
+        /* screen for desktop */
+            @media only screen and (min-width: 600px) {
+                ._netCut_text strong{
+                    font-size: clamp(16px,2.18vw,17.5px);
+                }
+                ._netCut_text p{
+                    font-size: clamp(8.4px,1.31vw,9.3px);
+                }
+                ._netCut_i{
+                    width: clamp(30px,4.68vw,38px);
+                    height: clamp(30px,4.68vw,38px);
+                    font-size: clamp(20px,3.125vw,27.5px);
+                }
+                ._netCut_btn button{
+                    font-size: 13.3px;
+                }
+            }
+        /* screen for desktop */
+
+        /* screen for mobile */
+            @media only screen and (max-width: 599px) {
+                ._netCut_text strong{
+                    font-size: clamp(17.8px,4.55vw,19px);
+                }
+                ._netCut_text p{
+                    font-size: clamp(9.7px,2.69vw,11.28px);
+                }
+                ._netCut_i{
+                    width: clamp(42px,11.68vw,46px);
+                    height: clamp(42px,11.68vw,46px);
+                    font-size: clamp(27px,7.5vw,29.5px);
+                }
+                ._netCut_btn button{
+                    font-size: 14.5px;
+                }
+            }
+        /* screen for mobile */
+
+</style>
+<div class="rootCss _Material_modalbox">
+    <div class="rootCss _netCut_box">
+        <div class="rootCss _netCut_i"><p>x</p></div>
+        <div class="rootCss _netCut_text"><strong>Network Disconnected</strong> <br><p>pls check your internet connection</p></div>
+        <div class="rootCss _netCut_btn">
+            <button>ok</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+<style>
+    .ToolTipBgColor {
+        background-color: #0e3953;
+    }
+
+    .TooltipClr {
+        color: whitesmoke;
+    }
+
+    .material_ToolTip_body {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: auto;
+        bottom: 20vh;
+        left: auto;
+        background: none;
+        z-index: 10;
+    }
+
+    .material_ToolTip_body p {
+        width: fit-content;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        word-wrap: break-word;
+        text-align: center;
+        padding: 8px 16px;
+        border-radius: 20vw;
+        text-transform: lowercase;
+        box-shadow: inset 0px 0px 200px #68686836;
+    }
+
+    /* screen for mobile */
+    @media only screen and (max-width: 599px) {
+        .material_ToolTip_body p {
+            max-width: clamp(280px, 77.77vw, 300px);
+            font-size: clamp(12px, 3.33vw, 14px);
+        }
+    }
+
+    /* screen for desktop */
+    @media only screen and (min-width: 600px) {
+        .material_ToolTip_body p {
+            max-width: clamp(320px, 50vw, 350px);
+            font-size: clamp(10px, 1.56vw, 11px);
+        }
+    }
+</style>
+<!-- tooltip -->
+<div class="material_ToolTip_body">
+    <p class="header_ToolTip_text ToolTipBgColor TooltipClr">this is testing text</p>
+</div>

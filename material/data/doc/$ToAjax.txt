@@ -1,0 +1,14 @@
+$ToAjax({
+    url:'/material/test/backend.php',
+    type:'POST',
+    data:{name:'ram',sname:'sahu'},
+    success:function(data){
+        // console.log(data);
+    },
+    json:false
+});
+
+where{
+    json => `is a responce type if json = true , request responce in json formate`.
+    Htmlpainter => Material('#_hello1').HtmlPainter(data); `this used to get or set html with javascript incase of $ToAjax responce.`
+}
